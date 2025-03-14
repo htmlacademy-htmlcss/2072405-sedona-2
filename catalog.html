@@ -25,11 +25,7 @@
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a
-              class="navigation-link navigation-link-active"
-              href="./catalog.html"
-              >Гостиницы</a
-            >
+            <a class="navigation-link navigation-link-active">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-user">
@@ -188,7 +184,7 @@
                   </ul>
                   <div class="range">
                     <div class="range-scale">
-                      <div class="range-bar" style="left: 0px; width: 220px">
+                      <div class="range-bar" style="left: 0; width: 220px">
                         <button class="range-toggle toggle-min">
                           <span class="visually-hidden"
                             >Изменить минимальную цену</span
@@ -224,7 +220,9 @@
       </div>
       <section class="found-hotels-list" data-test="catalog">
         <div class="hotel-price-wrapper">
-          <h2 class="hotels-ammount">Найдено гостиниц: 38</h2>
+          <p class="hotels-ammount">
+            Найдено гостиниц:<span class="search-ammount"> 38</span>
+          </p>
           <div class="hotel-price-wrapper">
             <select class="hotel-list-select">
               <option value="Сначала дешевые">Сначала дешевые</option>
@@ -235,17 +233,17 @@
             <ul class="hotel-view-choose">
               <li>
                 <a class="hotel-list-view hotel-list-view-selected" href="#"
-                  ><img src="images/table_icon.png"
+                  ><img src="images/table-icon.png"
                 /></a>
               </li>
               <li>
                 <a class="hotel-list-view" href="#"
-                  ><img src="images/large_icon.png"
+                  ><img src="images/large-icon.png"
                 /></a>
               </li>
               <li>
                 <a class="hotel-list-view" href="#"
-                  ><img src="images/list_icon.png"
+                  ><img src="images/list-icon.png"
                 /></a>
               </li>
             </ul>
@@ -406,22 +404,26 @@
     <footer class="page-footer">
       <ul class="social-list">
         <li class="social-item">
-          <a>
+          <a href="https://vk.com/htmlacademy" target="_blank">
             <img class="social-icon" src="images/icon-vk.svg" alt="Вконтакте" />
           </a>
         </li>
         <li class="social-item">
-          <a>
+          <a href="https://t.me/htmlacademy" target="_blank">
             <img
               class="social-icon"
-              src="images/icon-telegramm.svg"
+              src="images/social-telegram.svg"
               alt="Телеграмм"
             />
           </a>
         </li>
         <li class="social-item">
-          <a>
-            <img class="social-icon" src="images/icon-youtube.svg" alt="Ютуб" />
+          <a href="https://www.youtube.com/user/htmlacademyru" target="_blank">
+            <img
+              class="social-icon"
+              src="images/social-youtube.svg"
+              alt="Ютуб"
+            />
           </a>
         </li>
       </ul>
