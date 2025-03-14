@@ -300,7 +300,6 @@ input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-
 }
 
 .advantages-item-small {
@@ -328,7 +327,6 @@ input {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
-
 }
 
 .advantages-item-lead::after {
@@ -342,8 +340,8 @@ input {
 }
 
 .advantages-item-small .advantages-item-lead::after {
-background-color: rgba(0, 0, 0, 0.3);
-top: 198px;
+  background-color: rgba(0, 0, 0, 0.3);
+  top: 198px;
 }
 
 .advantages-item-text {
@@ -370,7 +368,7 @@ p {
   background-color: #ffffff;
 }
 .advantages-wrapper .advantages-item:nth-child(even),
-.reasons-list .reasons-item:nth-child(odd){
+.reasons-list .reasons-item:nth-child(odd) {
   background-color: #83b3d333;
 }
 
@@ -378,7 +376,6 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-
 }
 
 .reasons-list {
@@ -981,8 +978,15 @@ p {
   margin: 50px 70px 40px;
 }
 
-.hotels-ammount {
+.hotels-amount {
   margin-right: 200px;
+  font-family: PT Sans;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  letter-spacing: 0%;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 1);
 }
 
 .hotel-list-select {
