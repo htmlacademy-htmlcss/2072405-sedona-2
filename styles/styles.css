@@ -1033,6 +1033,28 @@ p {
   border: 2px solid #000000;
 }
 
+.two-stars {
+  display: block;
+  width: 42px;
+  height: 17px;
+  background-image: url("../images/star.png");
+  background-repeat: space;
+}
+.three-stars {
+  display: block;
+  width: 66px;
+  height: 17px;
+  background-image: url("../images/star.png");
+  background-repeat: space;
+}
+.four-stars {
+  display: block;
+  width: 84px;
+  height: 17px;
+  background-image: url("../images/star.png");
+  background-repeat: space;
+}
+
 .hotel-list {
   display: -webkit-box;
   display: -ms-flexbox;
