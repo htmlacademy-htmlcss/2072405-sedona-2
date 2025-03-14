@@ -265,13 +265,6 @@ input {
   margin-bottom: 20px;
 }
 
-.devider {
-  display: block;
-  width: 60px;
-  height: 2px;
-  background-color: rgba(255, 255, 255, 0.3);
-}
-
 .advantages-text {
   font-family: PT Sans;
   font-weight: 400;
@@ -284,7 +277,6 @@ input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -297,6 +289,7 @@ input {
   text-align: center;
   color: #ffffff;
   background-color: #82b3d3;
+  position: relative;
 }
 
 .advantages-wrapper {
@@ -307,6 +300,7 @@ input {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+
 }
 
 .advantages-item-small {
@@ -314,7 +308,6 @@ input {
   display: -ms-flexbox;
   display: flex;
   align-items: center;
-  gap: 30px;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -325,10 +318,7 @@ input {
   padding: 0 85px;
   height: 385px;
   justify-content: center;
-}
-
-.advantages-item-small .devider {
-  background-color: rgba(0, 0, 0, 0.3);
+  position: relative;
 }
 
 .advantages-item-lead {
@@ -338,6 +328,22 @@ input {
   line-height: 28px;
   text-align: center;
   text-transform: uppercase;
+
+}
+
+.advantages-item-lead::after {
+  content: "";
+  width: 60px;
+  height: 2px;
+  background-color: rgba(255, 255, 255, 0.3);
+  position: absolute;
+  left: 170px;
+  top: 188px;
+}
+
+.advantages-item-small .advantages-item-lead::after {
+background-color: rgba(0, 0, 0, 0.3);
+top: 198px;
 }
 
 .advantages-item-text {
@@ -346,6 +352,7 @@ input {
   font-size: 18px;
   line-height: 21px;
   text-align: center;
+  margin-top: 62px;
 }
 
 p {
@@ -371,6 +378,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+
 }
 
 .reasons-list {
