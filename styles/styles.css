@@ -811,8 +811,11 @@ p {
 }
 
 .controls-input-checkbox:checked::before {
-  content: "✔";
-  color: #3f5e72;
+  content: "";
+  background-image: url("../images/check-icon.png");
+  margin-top: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .controls-input-radio {
