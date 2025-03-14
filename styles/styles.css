@@ -854,7 +854,6 @@ p {
   flex-direction: column;
   gap: 32px;
   flex-wrap: wrap;
-  
 }
 
 .catalog-filter-group-price {
@@ -943,7 +942,6 @@ p {
   vertical-align: middle;
   color: rgba(0, 0, 0, 0.3);
 }
-
 
 .range-scale {
   position: relative;
@@ -1263,7 +1261,7 @@ p {
   flex-wrap: wrap;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(242, 242, 242, 0.8);
 }
 
 .modal {
@@ -1385,6 +1383,8 @@ p {
 .number-select {
   display: flex;
   align-items: center;
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 4px;
 }
 
 .number {
@@ -1402,36 +1402,46 @@ p {
   vertical-align: middle;
 }
 
-.minus,
-.plus,
-.minus:active,
-.plus:active {
+.minus {
   border: none;
   width: 40px;
   height: 48px;
+  background-image: url('../images/minus-button.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  opacity: 0.3;
+}
+
+.plus {
+  border: none;
+  width: 40px;
+  height: 48px;
+  background-image: url('../images/plus-button.svg');
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: rgba(242, 242, 242, 1);
   cursor: pointer;
+  opacity: 0.3;
 }
 
 .minus:hover,
 .plus:hover {
-  background-color: rgb(204, 202, 202, 0.8);
+  opacity: 1;
   transition: 0.3s;
 }
 
 .minus:focus,
 .plus:focus {
-  background-color: rgb(204, 202, 202, 0.8);
-  border: 3px solid rgba(130, 179, 211, 1);
+  opacity: 1;
+  border: solid 3px rgba(130, 179, 211, 1);
   transition: 0.3s;
 }
 
-.minus {
-  border-radius: 4px 0 0 4px;
-}
-
-.plus {
-  border-radius: 0 4px 4px 0;
+.minus:active,
+.plus:active {
+  opacity: 0.3;
+  transition: 0.3s;
 }
 
 .info-icon {
@@ -1532,4 +1542,30 @@ p {
 
 .modal-container-close {
   display: none;
+}
+
+button:disabled,
+a:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
+  cursor: default;
+  pointer-events: none;
+}
+
+.reset-filter-button:disabled {
+  background-color: transparent;
+  color: rgba(255, 255, 255, 0.3);
+  cursor: default;
+  pointer-events: none;
+}
+
+select:disabled {
+  border: 2px solid rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+  cursor: default;
+  pointer-events: none;
+}
+
+.social-icon:active {
+  opacity: 0.3;
 }

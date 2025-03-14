@@ -238,7 +238,7 @@
           ><img src="images/logo-academy.svg" alt="Логотип htmlacademy"
         /></a>
       </footer>
-      <div class="modal-container modal-container-close" data-test="modal">
+      <div class="modal-container" data-test="modal">
         <div class="modal">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
@@ -264,6 +264,7 @@
                     name="book-hotel-date"
                     placeholder="Дата заезда"
                     value="27 апреля 2020"
+                    required
                   />
                   <span class="info-message info-message-forbidden"
                     >Мы не можем отправить вас в прошлое.</span
@@ -281,7 +282,8 @@
                     id="book-hotel-date"
                     name="book-hotel-date"
                     placeholder="Дата выезда"
-                    value="1 сентября 2023"
+                    value="1 сентября 2025"
+                    required
                   />
                   <span class="info-message"
                     >На эти даты есть свободные номера. Пока есть.</span
@@ -291,13 +293,9 @@
                   <div class="people-number adults-number">
                     <span class="group-title">Взрослые:</span>
                     <div class="number-select">
-                      <button class="minus" type="button">
-                        <img src="/images/button-minus.png" />
-                      </button>
+                      <button class="minus" type="button"></button>
                       <span class="number">2</span>
-                      <button class="plus" type="button">
-                        <img src="/images/button-plus.png" />
-                      </button>
+                      <button class="plus" type="button"></button>
                     </div>
                   </div>
                   <div class="people-number children-number">
@@ -314,13 +312,9 @@
                     </div>
                   </div>
                   <div class="number-select">
-                    <button class="minus" type="button">
-                      <img src="/images/button-minus.png" />
-                    </button>
+                    <button class="minus" type="button"></button>
                     <span class="number">2</span>
-                    <button class="plus" type="button">
-                      <img src="/images/button-plus.png" />
-                    </button>
+                    <button class="plus" type="button"></button>
                   </div>
                 </div>
                 <button class="search-hotel-button">Найти</button>
