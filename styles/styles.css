@@ -88,6 +88,7 @@ li {
 
 ul {
   padding: 0;
+  margin: 0;
 }
 
 a {
@@ -676,7 +677,8 @@ p {
   line-height: 78px;
   letter-spacing: 0%;
   color: #ffffff;
-  margin: 0;
+  margin-top: 0;
+  margin-bottom: 8px;
 }
 
 .breadcrumbs-list {
@@ -689,6 +691,7 @@ p {
   align-items: center;
   gap: 10px;
   color: #ffffff;
+  margin-bottom: 40px;
 }
 
 .home-link:first-child::after {
@@ -726,6 +729,7 @@ p {
   font-size: 20px;
   line-height: 24px;
   color: #ffffff;
+  margin-bottom: 32px;
 }
 
 .catalog-filter-item {
@@ -850,7 +854,7 @@ p {
   flex-direction: column;
   gap: 32px;
   flex-wrap: wrap;
-  margin-top: 20px;
+  
 }
 
 .catalog-filter-group-price {
@@ -940,10 +944,12 @@ p {
   color: rgba(0, 0, 0, 0.3);
 }
 
+
 .range-scale {
   position: relative;
   height: 4px;
   background-color: rgb(151, 147, 147);
+  margin-top: 20px;
 }
 .range-bar {
   position: absolute;
