@@ -358,14 +358,12 @@ p {
   flex-wrap: wrap;
 }
 
-.second-advantages-item,
-.fourth-advantages-item,
-.second-reasons-item {
+.advantages-wrapper .advantages-item:nth-child(odd),
+.reasons-list .reasons-item:nth-child(even) {
   background-color: #ffffff;
 }
-.third-advantages-item,
-.first-reasons-item,
-.third-reasons-item {
+.advantages-wrapper .advantages-item:nth-child(even),
+.reasons-list .reasons-item:nth-child(odd){
   background-color: #83b3d333;
 }
 
