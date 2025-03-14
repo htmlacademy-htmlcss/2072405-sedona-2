@@ -248,7 +248,7 @@
           ><img src="images/logo-academy.svg" alt="Логотип htmlacademy"
         /></a>
       </footer>
-      <div class="modal-container modal-container-close">
+      <div class="modal-container" data-test="modal">
         <div class="modal">
           <button class="modal-close-button">
             <span class="visually-hidden">Закрыть</span>
@@ -273,7 +273,7 @@
                     id="book-hotel-date"
                     name="book-hotel-date"
                     placeholder="Дата заезда"
-                    value="27  апреля  2020"
+                    value="27 апреля 2020"
                   />
                   <span class="info-message info-message-forbidden"
                     >Мы не можем отправить вас в прошлое.</span
@@ -291,43 +291,44 @@
                     id="book-hotel-date"
                     name="book-hotel-date"
                     placeholder="Дата выезда"
-                    value="01 сентября 2023"
+                    value="1 сентября 2023"
                   />
                   <span class="info-message"
                     >На эти даты есть свободные номера. Пока есть.</span
                   >
                 </p>
+
+                <div class="number-group">
+                  <div class="people-number adults-number">
+                    <span class="group-title">Взрослые:</span>
+                    <div class="number-select">
+                      <button class="minus" type="button">
+                        <img src="/images/button-minus.png" />
+                      </button>
+                      <span class="number">2</span>
+                      <button class="plus" type="button">
+                        <img src="/images/button-plus.png" />
+                      </button>
+                    </div>
+                  </div>
+                  <div class="people-number children-number">
+                    <div class="age-info">
+                      <span class="group-title">Дети:</span>
+                      <div class="info-icon">i</div>
+                    </div>
+                    <div class="number-select">
+                      <button class="minus" type="button">
+                        <img src="/images/button-minus.png" />
+                      </button>
+                      <span class="number">2</span>
+                      <button class="plus" type="button">
+                        <img src="/images/button-plus.png" />
+                      </button>
+                    </div>
+                  </div>
+                </div>
+                <button class="search-hotel-button">Найти</button>
               </form>
-              <div class="number-group">
-                <div class="people-number adults-number">
-                  <span class="group-title">Взрослые:</span>
-                  <div class="number-select">
-                    <button class="minus" type="button">
-                      <img src="/images/button-minus.png" />
-                    </button>
-                    <span class="number">2</span>
-                    <button class="plus" type="button">
-                      <img src="/images/button-plus.png" />
-                    </button>
-                  </div>
-                </div>
-                <div class="people-number children-number">
-                  <div class="age-info">
-                    <span class="group-title">Дети:</span>
-                    <div class="info-icon">i</div>
-                  </div>
-                  <div class="number-select">
-                    <button class="minus" type="button">
-                      <img src="/images/button-minus.png" />
-                    </button>
-                    <span class="number">2</span>
-                    <button class="plus" type="button">
-                      <img src="/images/button-plus.png" />
-                    </button>
-                  </div>
-                </div>
-              </div>
-              <button class="search-hotel-button">Найти</button>
             </div>
           </section>
         </div>
