@@ -586,6 +586,7 @@ p {
   text-transform: uppercase;
   border: none;
   border-radius: 0 4px 4px 0;
+  cursor: pointer;
 }
 
 .subscribe-button:hover {
@@ -880,6 +881,7 @@ p {
   width: 191px;
   height: 36px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .active-filter-button {
@@ -1001,6 +1003,7 @@ p {
   color: #333333;
   padding: 0 20px;
   border-radius: 4px;
+  cursor: pointer;
 }
 
 .hotel-list-select:hover,
@@ -1082,6 +1085,11 @@ p {
   -ms-flex-direction: column;
   flex-direction: column;
   gap: 16px;
+}
+
+.hotel-list-item:hover {
+  background-color: rgba(243, 236, 236, 0.445);
+  transition: 0.3s;
 }
 
 .hotel-title {
@@ -1277,6 +1285,16 @@ p {
   border-radius: 50%;
 }
 
+.modal-close-button:hover {
+  background-color: rgba(230, 230, 230, 1);
+  transition: 0.3s;
+}
+
+.modal-close-button:focus {
+  background-color: rgba(230, 230, 230, 1);
+  border: solid 3px rgba(131, 179, 211, 1);
+}
+
 .modal-title {
   margin-bottom: 64px;
   font-family: PT Sans;
@@ -1307,6 +1325,7 @@ p {
   background-color: #83b3d3;
   border-radius: 4px;
   border: none;
+  cursor: pointer;
 }
 
 .book-form {
@@ -1368,15 +1387,37 @@ p {
   text-align: center;
   padding-top: 14px;
   background-color: rgba(242, 242, 242, 1);
+  font-family: PT Sans;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: center;
+  vertical-align: middle;
 }
 
 .minus,
-.plus {
+.plus,
+.minus:active,
+.plus:active {
   border: none;
   width: 40px;
   height: 48px;
   background-color: rgba(242, 242, 242, 1);
-  color: rgba(0, 0, 0, 1);
+  cursor: pointer;
+}
+
+.minus:hover,
+.plus:hover {
+  background-color: rgb(204, 202, 202, 0.8);
+  transition: 0.3s;
+}
+
+.minus:focus,
+.plus:focus {
+  background-color: rgb(204, 202, 202, 0.8);
+  border: 3px solid rgba(130, 179, 211, 1);
+  transition: 0.3s;
 }
 
 .minus {
@@ -1396,12 +1437,14 @@ p {
   border-radius: 50%;
   text-align: center;
   position: relative;
+  cursor: pointer;
 }
 
 .age-info {
   display: flex;
   align-items: center;
   gap: 13px;
+  position: relative;
 }
 
 .book-form-field {
@@ -1438,6 +1481,47 @@ p {
 
 .info-message-forbidden {
   color: rgba(255, 87, 87, 1);
+}
+
+.tooltip {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: -56px;
+  width: 256px;
+  height: 143px;
+  background-color: rgba(51, 51, 51, 1);
+  border-radius: 10px;
+  display: none;
+}
+
+.tooltip-text {
+  display: block;
+  font-family: PT Sans;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: rgba(255, 255, 255, 1);
+  padding: 15px 18px 18px 22px;
+}
+
+.info-icon:hover + .tooltip,
+.info-icon:focus + .tooltip {
+  display: block;
+}
+
+.tooltip-text:after {
+  content: "";
+  background-image: url("../images/triangle.svg");
+  width: 19px;
+  height: 9px;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .modal-container-close {
