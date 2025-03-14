@@ -693,6 +693,11 @@ p {
   color: #ffffff;
 }
 
+.home-link:first-child::after {
+  content: ">";
+  margin-left: 10px;
+}
+
 .breadcrumbs-item:hover,
 .breadcrumbs-item:active {
   color: rgba(255, 255, 255, 0.5);
