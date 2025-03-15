@@ -234,8 +234,8 @@ body {
 }
 
 .advantages-text {
- margin: 0;
- padding: 0;
+  margin: 0;
+  padding: 0;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -1268,6 +1268,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .modal-close-button:hover {
@@ -1279,14 +1280,17 @@ body {
   background-color: rgba(230, 230, 230, 1);
   border: solid 3px rgba(131, 179, 211, 1);
 }
+.modal-close-button:active {
+  opacity: 0.3;
+}
 
 .modal-title {
+  margin: 0;
+  padding: 0;
   margin-bottom: 64px;
-  font-family: PT Sans;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  text-align: left;
   color: #000000;
 }
 
@@ -1306,11 +1310,28 @@ body {
   line-height: 24px;
   text-transform: uppercase;
   text-align: center;
-  color: #ffffff;
-  background-color: #83b3d3;
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(130, 179, 211, 1);
   border-radius: 4px;
   border: none;
   cursor: pointer;
+}
+
+.search-hotel-button:hover {
+  background-color: rgba(104, 162, 202, 1);
+}
+.search-hotel-button:focus {
+  background-color: rgba(104, 162, 202, 1);
+}
+
+.search-hotel-button:active {
+  background-color: (130, 179, 211, 1);
+}
+
+.search-hotel-button:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 1);
+  pointer-events: none;
 }
 
 .book-form {
@@ -1330,13 +1351,19 @@ body {
   position: relative;
 }
 
+.book-field-group {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
 .book-label {
-  font-family: PT Sans;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
   color: #000000;
-  margin-right: 18px;
 }
 
 .number-group {
@@ -1434,7 +1461,6 @@ body {
   border-radius: 50%;
   text-align: center;
   position: relative;
-  cursor: pointer;
 }
 
 .age-info {
@@ -1446,34 +1472,37 @@ body {
 
 .book-form-field {
   display: inline-block;
-  width: 380px;
+  min-width: 400px;
   height: 24px;
   padding: 12px 20px;
-  font-family: PT Sans;
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
-  letter-spacing: 0%;
   vertical-align: middle;
   border-radius: 4px;
   border: none;
   background-color: rgba(242, 242, 242, 1);
   background-image: url("../images/calendar-icon.png");
   background-repeat: no-repeat;
-  background-position: 380px;
+  background-position: 400px;
+  cursor: pointer;
+}
+
+.book-form-field:hover {
+  background-color: rgba(230, 230, 230, 1);
+}
+.book-form-field:focus {
+  background-color: rgba(230, 230, 230, 1);
 }
 
 .info-message {
-  position: absolute;
-  left: 157px;
-  top: 52px;
-  font-family: PT Sans;
-  font-weight: 400;
   font-size: 16px;
   line-height: 21px;
   letter-spacing: 0%;
   vertical-align: middle;
   color: rgba(51, 51, 51, 1);
+  margin-left: 157px;
+  margin-top: 4px;
 }
 
 .info-message-forbidden {
