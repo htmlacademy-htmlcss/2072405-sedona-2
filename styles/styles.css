@@ -46,14 +46,13 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   padding: 0 40px;
 }
 
 .wrapper {
   background-color: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-header {
