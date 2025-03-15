@@ -643,6 +643,7 @@ body {
 
 .breadcrumbs-list {
   margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -661,7 +662,7 @@ body {
 
 .breadcrumbs-list .breadcrumbs-item:not(:last-child)::after {
   content: ">";
-  margin-left: 10px;
+  margin-left: 5px;
 }
 .breadcrumbs-item {
   list-style-type: none;
@@ -767,6 +768,8 @@ body {
 }
 
 .controls-input {
+  margin: 0;
+  padding: 0;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -818,7 +821,7 @@ body {
 }
 
 .price-filter-group {
-  margin-left: 140px;
+  margin-left: 152px;
   display: flex;
   flex-direction: column;
 }
@@ -1134,6 +1137,7 @@ body {
   align-items: center;
 }
 
+
 .hotel-card-button {
   text-decoration: none;
   color: rgba(255, 255, 255, 1);
@@ -1225,6 +1229,7 @@ body {
   flex-wrap: wrap;
   gap: 8px;
   margin-top: 40px;
+  margin-bottom: 20px;
 }
 
 .pagination-item {
@@ -1232,6 +1237,8 @@ body {
 }
 
 .pagination-link {
+  margin: 0;
+  padding: 0;
   text-decoration: none;
   display: block;
   background-color: #82b3d3;
