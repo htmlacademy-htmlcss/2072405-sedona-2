@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Владимир Бусел](https://up.htmlacademy.ru/htmlcss-individual/2/user/2072405).
-* Наставник: `Неизвестно`.
+* Наставник: [Вадим Новаш](https://htmlacademy.ru/profile/stakeout).
 
 ---
 
