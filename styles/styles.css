@@ -1317,7 +1317,6 @@ body {
 .search-hotel-button {
   width: 577px;
   height: 60px;
-  font-family: PT Sans;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
@@ -1386,7 +1385,6 @@ body {
 }
 
 .group-title {
-  font-family: PT Sans;
   font-weight: 700;
   font-size: 20px;
   line-height: 24px;
