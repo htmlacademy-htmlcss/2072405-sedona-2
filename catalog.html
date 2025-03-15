@@ -8,7 +8,7 @@
   <body>
     <div class="wrapper">
       <header class="page-header" data-test="header">
-        <a class="navigation-logo" href="index.html" aria-current="page">
+        <a class="navigation-logo" href="/" aria-current="page">
           <img
             class="page-header-logo"
             src="images/logo.svg"
@@ -20,7 +20,7 @@
         <div class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link" href="index.html">Главная</a>
+              <a class="navigation-link" href="/">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="index.html#about-city"
@@ -57,9 +57,9 @@
             <h1 class="catalog-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs-list">
               <li class="breadcrumbs-item">
-                <a class="breadcrumbs-link home-link" href="./index.html"
-                  ><img
-                    src="images/home.png"
+                <a class="breadcrumbs-link home-link" href="/"
+                  ><img class="home-link-icon"
+                    src="images/home.svg"
                     alt="Вернуться на главную страницу"
                 /></a>
               </li>
@@ -91,24 +91,24 @@
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="controls" form="pool">
+                    <label class="controls" for="parking">
                       <input
                         class="controls-input controls-input-checkbox"
                         type="checkbox"
-                        name="pool"
-                        id="pool"
+                        name="parking"
+                        id="parking"
                         checked
                       />
                       Парковка
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="controls" for="pool">
+                    <label class="controls" for="wifi">
                       <input
                         class="controls-input controls-input-checkbox"
                         type="checkbox"
-                        name="pool"
-                        id="pool"
+                        name="wifi"
+                        id="wifi"
                       />
                       Wi-Fi
                     </label>
@@ -119,35 +119,35 @@
                 <legend class="catalog-filter-title">Тип жилья:</legend>
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
-                    <label class="controls" form="pool">
+                    <label class="controls" for="hotel">
                       <input
                         class="controls-input controls-input-radio"
                         type="radio"
-                        name="pool"
-                        id="pool"
+                        name="hotel"
+                        id="hotel"
                         checked
                       />
                       Гостиница
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="controls" form="pool">
+                    <label class="controls" for="motel">
                       <input
                         class="controls-input controls-input-radio"
                         type="radio"
-                        name="pool"
-                        id="pool"
+                        name="motel"
+                        id="motel"
                       />
                       Мотель
                     </label>
                   </li>
                   <li class="catalog-filter-item">
-                    <label class="controls" form="pool">
+                    <label class="controls" for="appartments">
                       <input
                         class="controls-input controls-input-radio"
                         type="radio"
-                        name="pool"
-                        id="pool"
+                        name="appartments"
+                        id="appartments"
                       />
                       Аппартаменты
                     </label>
@@ -160,24 +160,24 @@
                   <div class="catalog-filter-price">
                     <ul class="catalog-filter-list-price">
                       <li class="catalog-filter-item price-controls">
-                        <label class="controls" form="pool">
+                        <label class="controls" for="price-from">
                           <input
                             class="controls-input-price"
-                            type="number"
-                            name="pool"
-                            id="pool"
+                            type="text"
+                            name="price-from"
+                            id="price-from"
                             value="0"
                           />
                           <span class="input-text">от</span>
                         </label>
                       </li>
                       <li class="catalog-filter-item price-controls">
-                        <label class="controls" form="pool">
+                        <label class="controls" for="price-to">
                           <input
                             class="controls-input-price"
-                            type="number"
-                            name="pool"
-                            id="pool"
+                            type="text"
+                            name="price-to"
+                            id="price-to"
                             value="9000"
                           />
                           <span class="input-text">до</span>
@@ -187,12 +187,12 @@
                     <div class="range">
                       <div class="range-scale">
                         <div class="range-bar" style="left: 0; width: 220px">
-                          <button class="range-toggle toggle-min">
+                          <button class="range-toggle toggle-min" type="button">
                             <span class="visually-hidden"
                               >Изменить минимальную цену</span
                             >
                           </button>
-                          <button class="range-toggle toggle-max">
+                          <button class="range-toggle toggle-max" type="button">
                             <span class="visually-hidden"
                               >Изменить максимальную цену</span
                             >
