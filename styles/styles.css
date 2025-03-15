@@ -223,6 +223,8 @@ body {
 }
 
 .advantages-title {
+  margin: 0;
+  padding: 0;
   font-size: 30px;
   line-height: 36px;
   text-align: center;
@@ -232,6 +234,8 @@ body {
 }
 
 .advantages-text {
+ margin: 0;
+ padding: 0;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -1521,28 +1525,12 @@ body {
   display: none;
 }
 
-button:disabled,
-a:disabled {
-  background-color: rgba(229, 229, 229, 1);
-  color: rgba(255, 255, 255, 1);
-  cursor: default;
-  pointer-events: none;
-}
-
 .reset-filter-button:disabled {
   background-color: transparent;
   color: rgba(255, 255, 255, 0.3);
   cursor: default;
   pointer-events: none;
 }
-
-select:disabled {
-  border: 2px solid rgba(0, 0, 0, 0.3);
-  color: rgba(0, 0, 0, 0.3);
-  cursor: default;
-  pointer-events: none;
-}
-
 .social-icon:active {
   opacity: 0.3;
 }
