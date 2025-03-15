@@ -23,36 +23,25 @@
 
 /* Pages */
 html {
-  margin-left: auto;
-  margin-right: auto;
-  background-color: rgb(242, 242, 242);
+  box-sizing: border-box;
 }
 
 body {
   font-family: "PT Sans", "Arial", sans-serif;
-  width: 1200px;
-  min-height: 100vh;
-  margin: 0 auto;
+  margin: 0;
   font-size: 18px;
   line-height: 21px;
   font-weight: 400;
   font-style: normal;
   color: #333333;
   background-color: #f2f2f2;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-  padding: 0 40px;
 }
 
 .wrapper {
+  width: 1200px;
   background-color: #ffffff;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
 }
 
 .page-header {
@@ -983,7 +972,7 @@ p {
 }
 
 .found-hotels-list {
-  margin: 50px 70px 40px;
+ padding: 50px 70px 40px;
 }
 
 .hotels-amount {
@@ -1085,6 +1074,7 @@ p {
 }
 
 .hotel-list-item {
+  max-width: 304px;
   padding: 18px;
   border: 1px solid rgba(230, 230, 230, 1);
   display: -webkit-box;
@@ -1234,6 +1224,10 @@ p {
 }
 
 .pagination-link:hover {
+  background-color: rgba(104, 162, 202, 1);
+  transition: 0.3s;
+}
+.pagination-link:focus {
   background-color: rgba(104, 162, 202, 1);
   transition: 0.3s;
 }
