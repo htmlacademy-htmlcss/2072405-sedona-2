@@ -46,13 +46,14 @@ body {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+
   padding: 0 40px;
 }
 
 .wrapper {
   background-color: #ffffff;
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 .page-header {
@@ -130,6 +131,7 @@ input {
   display: flex;
   flex-wrap: wrap;
   margin-left: 238px;
+  width: 339px;
 }
 
 .navigation-link {
@@ -917,7 +919,7 @@ p {
 }
 
 .controls-input-price {
-  width: 123px;
+  width: 93px;
   height: 48px;
   font-family: PT Sans;
   font-weight: 700;
@@ -927,6 +929,7 @@ p {
   border-radius: 4px;
   background-color: rgba(242, 242, 242, 1);
   padding-left: 20px;
+  padding-right: 30px;
 }
 
 .input-text {
@@ -1008,6 +1011,11 @@ p {
   padding: 0 20px;
   border-radius: 4px;
   cursor: pointer;
+  appearance: none;
+  background-image: url('../images/arrow-bottom.png');
+  background-repeat: no-repeat;
+  background-position-y: center;
+  background-position-x: 260px;
 }
 
 .hotel-list-select:hover,
@@ -1406,7 +1414,7 @@ p {
   border: none;
   width: 40px;
   height: 48px;
-  background-image: url('../images/minus-button.svg');
+  background-image: url("../images/minus-button.svg");
   background-repeat: no-repeat;
   background-position: center;
   cursor: pointer;
@@ -1417,7 +1425,7 @@ p {
   border: none;
   width: 40px;
   height: 48px;
-  background-image: url('../images/plus-button.svg');
+  background-image: url("../images/plus-button.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-color: rgba(242, 242, 242, 1);
