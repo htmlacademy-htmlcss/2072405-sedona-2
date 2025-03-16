@@ -205,6 +205,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto, 1200px 485px;
   background-position: left bottom, left top;
+  background-color: #cce3f1;
   padding: 51px 371px 82px;
 }
 
@@ -513,6 +514,7 @@ body {
   background-image: url("../images/subscribe-main-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #333333;
   padding: 96px 258px 104px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -715,6 +717,7 @@ body {
   background-image: url("../images/catalog-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #615048;
   padding: 35px 70px 70px 70px;
 }
 
