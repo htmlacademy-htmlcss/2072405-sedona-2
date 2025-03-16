@@ -152,7 +152,7 @@ body {
 .navigation-user .navigation-button {
   color: #ffffff;
   text-decoration: none;
-  background-color: #756157;
+  background-color: rgba(117, 97, 87, 1);
   text-transform: uppercase;
   text-align: center;
   border-radius: 4px;
@@ -168,13 +168,13 @@ body {
 }
 
 .navigation-button:hover {
-  background-color: #615048;
+  background-color: rgba(97, 80, 72, 1);
 }
 .navigation-button:focus {
-  background-color: #615048;
+  background-color: rgba(97, 80, 72, 1);
 }
 .navigation-button:active {
-  background-color: #756157;
+  background-color: rgba(117, 97, 87, 1);
   color: rgba(255, 255, 255, 0.3);
 }
 
