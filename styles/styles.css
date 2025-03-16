@@ -119,7 +119,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 285px;
+  margin-left: 313px;
   gap: 16px;
 }
 
@@ -128,10 +128,24 @@ body {
   list-style-type: none;
 }
 
-.navigation-user .navigation-link {
-  margin-top: 20px;
-  margin-bottom: 16px;
-  padding: 0;
+.search-navigation-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.likes-navigation-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/likes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+  margin-right: 17px;
 }
 
 .likes-ammount {
@@ -146,7 +160,7 @@ body {
   text-align: center;
   position: absolute;
   bottom: 15px;
-  left: 25px;
+  left: 20px;
 }
 
 .navigation-user .navigation-button {
@@ -385,6 +399,32 @@ body {
   align-items: center;
 }
 
+.reasons-food-icon {
+  display: block;
+  width: 64px;
+  height: 76px;
+  background-image: url("../images/food-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.reasons-home-icon {
+  display: block;
+  width: 75px;
+  height: 72px;
+  background-image: url("../images/flat-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.reasons-suvenir-icon {
+  display: block;
+  width: 64px;
+  height: 76px;
+  background-image: url("../images/suvenir-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .reasons-item-title {
   margin: 0;
   padding: 0;
@@ -603,6 +643,33 @@ body {
   list-style-type: none;
 }
 
+.social-link-vk {
+  display: block;
+  width: 47px;
+  height: 40px;
+  background-image: url("../images/icon-vk.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-link-telegram {
+  display: block;
+  width: 47px;
+  height: 40px;
+  background-image: url("../images/social-telegram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-link-youtube {
+  display: block;
+  width: 47px;
+  height: 40px;
+  background-image: url("../images/social-youtube.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .phone {
   text-decoration: none;
   font-family: PT Sans;
@@ -621,6 +688,15 @@ body {
 .phone:active {
   color: rgba(117, 97, 87, 0.3);
   transition: 0.3s;
+}
+
+.author-logo {
+  display: block;
+  width: 115px;
+  height: 33px;
+  background-image: url("../images/logo-academy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .author-logo:hover,
@@ -666,7 +742,13 @@ body {
   margin-bottom: 40px;
 }
 
-.home-link-icon {
+.home-link {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/home.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   filter: invert(1);
 }
 
@@ -718,7 +800,6 @@ body {
   color: #ffffff;
   margin-bottom: 32px;
 }
-
 
 .catalog-filter-item {
   line-height: 23px;
@@ -779,7 +860,7 @@ body {
 }
 
 .controls input {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .controls-input {
@@ -1057,7 +1138,6 @@ body {
 
 .hotel-list-view {
   display: block;
-  padding: 12px 14px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   text-align: center;
@@ -1065,6 +1145,31 @@ body {
 
 .hotel-list-view-selected {
   border: 2px solid #000000;
+}
+
+.hotel-list-view-table {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-image: url("../images/table-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hotel-list-view-large {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-image: url("../images/large-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hotel-list-view-list {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-image: url("../images/list-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .two-stars {
@@ -1151,7 +1256,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-
 
 .hotel-card-button {
   text-decoration: none;
