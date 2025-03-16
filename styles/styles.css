@@ -65,6 +65,8 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .navigation-logo {
@@ -95,8 +97,8 @@ body {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
-  margin: 20px 16px 0 16px;
-  padding-bottom: 20px;
+  margin: 0 16px 0 16px;
+
 }
 
 .navigation-link:hover {
@@ -106,24 +108,45 @@ body {
 
 .navigation-link-active {
   border-bottom: solid 3px rgba(117, 98, 87, 1);
-  padding-bottom: 18px;
   pointer-events: none;
+  padding-bottom: 20px;
 }
 
 .navigation-user {
   padding: 0;
   margin: 0;
+  max-width: 300px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 281px;
-
+  margin-left: 313px;
+  gap: 16px;
 }
 
 .navigation-user-item {
   position: relative;
   list-style-type: none;
+}
+
+.search-navigation-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/search.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.likes-navigation-link {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background-image: url("../images/likes.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 8px;
+  margin-right: 17px;
 }
 
 .likes-ammount {
@@ -138,12 +161,13 @@ body {
   text-align: center;
   position: absolute;
   bottom: 15px;
-  left: 25px;
+  left: 20px;
 }
 
-.navigation-button {
+.navigation-user .navigation-button {
   color: #ffffff;
-  background-color: #756157;
+  text-decoration: none;
+  background-color: rgba(117, 97, 87, 1);
   text-transform: uppercase;
   text-align: center;
   border-radius: 4px;
@@ -159,13 +183,13 @@ body {
 }
 
 .navigation-button:hover {
-  background-color: #615048;
+  background-color: rgba(97, 80, 72, 1);
 }
 .navigation-button:focus {
-  background-color: #615048;
+  background-color: rgba(97, 80, 72, 1);
 }
 .navigation-button:active {
-  background-color: #756157;
+  background-color: rgba(117, 97, 87, 1);
   color: rgba(255, 255, 255, 0.3);
 }
 
@@ -181,6 +205,7 @@ body {
   background-repeat: no-repeat;
   background-size: 100% auto, 1200px 485px;
   background-position: left bottom, left top;
+  background-color: #cce3f1;
   padding: 51px 371px 82px;
 }
 
@@ -352,6 +377,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  flex-wrap: wrap;
 }
 
 .reasons-item {
@@ -373,6 +399,32 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+}
+
+.reasons-food-icon {
+  display: block;
+  width: 64px;
+  height: 76px;
+  background-image: url("../images/food-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.reasons-home-icon {
+  display: block;
+  width: 75px;
+  height: 72px;
+  background-image: url("../images/flat-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.reasons-suvenir-icon {
+  display: block;
+  width: 64px;
+  height: 76px;
+  background-image: url("../images/suvenir-icon.svg");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .reasons-item-title {
@@ -462,6 +514,7 @@ body {
   background-image: url("../images/subscribe-main-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #333333;
   padding: 96px 258px 104px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -593,6 +646,33 @@ body {
   list-style-type: none;
 }
 
+.social-link-vk {
+  display: block;
+  width: 47px;
+  height: 40px;
+  background-image: url("../images/icon-vk.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-link-telegram {
+  display: block;
+  width: 47px;
+  height: 40px;
+  background-image: url("../images/social-telegram.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.social-link-youtube {
+  display: block;
+  width: 47px;
+  height: 40px;
+  background-image: url("../images/social-youtube.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .phone {
   text-decoration: none;
   font-family: PT Sans;
@@ -613,6 +693,15 @@ body {
   transition: 0.3s;
 }
 
+.author-logo {
+  display: block;
+  width: 115px;
+  height: 33px;
+  background-image: url("../images/logo-academy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .author-logo:hover,
 .author-logo:focus {
   opacity: 0.5;
@@ -628,6 +717,7 @@ body {
   background-image: url("../images/catalog-bg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: #615048;
   padding: 35px 70px 70px 70px;
 }
 
@@ -656,7 +746,13 @@ body {
   margin-bottom: 40px;
 }
 
-.home-link-icon {
+.home-link {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-image: url("../images/home.svg");
+  background-position: center;
+  background-repeat: no-repeat;
   filter: invert(1);
 }
 
@@ -765,6 +861,10 @@ body {
   display: -ms-flexbox;
   display: flex;
   gap: 2px;
+}
+
+.controls input {
+  flex-shrink: 0;
 }
 
 .controls-input {
@@ -1042,7 +1142,6 @@ body {
 
 .hotel-list-view {
   display: block;
-  padding: 12px 14px;
   border: 2px solid #e5e5e5;
   border-radius: 4px;
   text-align: center;
@@ -1050,6 +1149,31 @@ body {
 
 .hotel-list-view-selected {
   border: 2px solid #000000;
+}
+
+.hotel-list-view-table {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-image: url("../images/table-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hotel-list-view-large {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-image: url("../images/large-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.hotel-list-view-list {
+  display: block;
+  width: 44px;
+  height: 44px;
+  background-image: url("../images/list-icon.png");
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .two-stars {
@@ -1136,7 +1260,6 @@ body {
   -ms-flex-align: center;
   align-items: center;
 }
-
 
 .hotel-card-button {
   text-decoration: none;
