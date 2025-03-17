@@ -64,8 +64,6 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 14px;
-  padding-bottom: 14px;
   align-items: center;
 }
 
@@ -97,7 +95,7 @@ body {
   line-height: 24px;
   color: #000000;
   text-decoration: none;
-  margin: 0 16px;
+  padding: 20px 16px;
 }
 
 .navigation-link:hover {
@@ -108,7 +106,8 @@ body {
 .navigation-link-active {
   border-bottom: solid 3px rgba(117, 98, 87, 1);
   pointer-events: none;
-  padding-bottom: 20px;
+  padding: 0 0 20px 0;
+  margin: 0 16px;
 }
 
 .navigation-user {
@@ -119,8 +118,7 @@ body {
   display: -ms-flexbox;
   display: flex;
   flex-wrap: wrap;
-  margin-left: 313px;
-  gap: 16px;
+  margin-left: 285px;
   align-items: center;
 }
 
@@ -136,6 +134,12 @@ body {
   background-image: url("../images/search.svg");
   background-position: center;
   background-repeat: no-repeat;
+  padding: 21px 12px;
+}
+
+.search-navigation-link:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 .likes-navigation-link {
@@ -145,8 +149,13 @@ body {
   background-image: url("../images/likes.svg");
   background-position: center;
   background-repeat: no-repeat;
-  margin-left: 8px;
-  margin-right: 17px;
+  padding: 21px 12px;
+  margin-right: 24px;
+}
+
+.likes-navigation-link:hover {
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
 .likes-ammount {
@@ -158,7 +167,7 @@ body {
   line-height: 10px;
   text-align: center;
   position: absolute;
-  top: -10px;
+  top: 10px;
   left: 20px;
 }
 
@@ -179,6 +188,7 @@ body {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
+  margin: 14px 0;
 }
 
 .navigation-button:hover {
@@ -190,6 +200,11 @@ body {
 .navigation-button:active {
   background-color: rgba(117, 97, 87, 1);
   color: rgba(255, 255, 255, 0.3);
+}
+.navigation-button:disabled {
+  background-color: rgba(229, 229, 229, 1);
+  color: rgba(255, 255, 255, 0.3);
+  pointer-events: none;
 }
 
 .navigation-logo {
@@ -567,6 +582,7 @@ body {
   line-height: 24px;
   vertical-align: middle;
   padding: 0 20px;
+  cursor: pointer;
 }
 
 .subscribe-input:hover {
@@ -617,7 +633,7 @@ body {
   -ms-flex-align: center;
   align-items: center;
   min-height: 40px;
-  padding: 45px 70px 35px;
+  padding: 0 70px;
   background-color: #ffffff;
   margin-top: auto;
 }
@@ -675,6 +691,7 @@ body {
   line-height: 40px;
   text-align: center;
   color: #000000;
+  padding: 45px 0 35px;
 }
 
 .phone:hover,
@@ -694,6 +711,7 @@ body {
   background-image: url("../images/logo-academy.svg");
   background-repeat: no-repeat;
   background-position: center;
+  padding: 45px 0 35px;
 }
 
 .author-logo:hover,
@@ -859,6 +877,7 @@ body {
 
 .controls input {
   flex-shrink: 0;
+  cursor: pointer;
 }
 
 .controls-input {
